@@ -18,12 +18,7 @@ var repository = [
   pokemonName : 'Pikachu',
   pokemonHeight : 0.4,
   pokemonTypes : ['Field, Fairy'],
-}
+},
 ];
 
-for ( let i = 0; i < repository.length; i++) {
-  document.write('<h2>' + repository[i].pokemonName + '</h2>' + ' Height: ' + repository[i].pokemonHeight)
-if (repository[i].pokemonHeight >= 1.07) {
-  document.write(' (Wow that\'s big!)' )
-  }
-}
+repository.forEach(element => console.log(element));
