@@ -21,4 +21,6 @@ var repository = [
 },
 ];
 
-repository.forEach(element => console.log(element));
+repository.forEach (function (list) {
+  console.log(list)
+});
