@@ -1,4 +1,5 @@
-var repository = [
+var pokemonRepository = (function () {
+var pokemonList = [
 {
   pokemonName : 'Butterfree',
   pokemonHeight : 1.01,
@@ -21,6 +22,18 @@ var repository = [
 },
 ];
 
-repository.forEach (function (list) {
-  console.log(list)
-});
+function getAll() {
+  return pokemonList;
+}
+
+function add(pokemon) {
+  pokemonList.push(pokemon);
+}
+
+return {
+  getAll : getAll,
+  add: add
+};
+})();
+
+console.log(pokemonRepository.getAll() );
