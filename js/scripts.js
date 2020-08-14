@@ -22,6 +22,13 @@ var pokemonList = [
 },
 ];
 
+for ( let i = 0; i < pokemonList.length; i++) {
+  document.write('<h2>' +  pokemonList[i].pokemonName + '</h2>' + ' Height: ' +  pokemonList[i].pokemonHeight)
+if (pokemonList[i].pokemonHeight >= 1.07) {
+  document.write(' (Wow that\'s big!)' )
+  }
+}
+
 function getAll() {
   return pokemonList;
 }
